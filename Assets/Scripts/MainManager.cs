@@ -20,6 +20,8 @@ public class MainManager : MonoBehaviour
 
     private bool m_GameOver = false;
 
+    public static MainManager Instance { get; private set; }
+
     // MIGRATED: InputAction replaces Input.GetKeyDown(KeyCode.Space)
     private InputAction m_LaunchAction;
 
